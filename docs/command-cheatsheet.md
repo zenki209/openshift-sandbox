@@ -38,10 +38,22 @@ oc get pod
 oc get pod -o wide
 ```
 
+## List pod with Project Name
+
+```
+oc get pods -n [PROJECT_NAME] 
+```
+
 ## List pod names (for scripting)
 
 ```
 oc get pod -o name
+```
+
+## Access pod names (for scripting)
+
+```
+oc rsh -n [PROJECT_NAME] [POD_NAME]
 ```
 
 ## Get specific item using Go template (for scripting)
